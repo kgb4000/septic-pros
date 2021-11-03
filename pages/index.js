@@ -69,7 +69,7 @@ export default function Home() {
               <div className="btn">
                 <Link href="/septic-services">
                   <a>
-                    <Button as="a">Call (443)234-2374</Button>
+                    <Button>Call (443)234-2374</Button>
                   </a>
                 </Link>
               </div>
