@@ -1,11 +1,9 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import HeroBox from '../../components/HeroBox'
 import Button from '../../components/Button'
 import { NextSeo } from 'next-seo'
-import FreeEstimateForm from '../../components/FreeEstimateForm'
 
 export default function Installation() {
   const SEO = {
@@ -13,11 +11,11 @@ export default function Installation() {
     titleTemplate: '#1 Septic Tank Installation in Anne Arundel County | %s',
     description:
       'Need new Septic Tank Installation for your home? We can do it right. We are Home Septic Pros.',
-    canonical: 'https://homesepticpros.com/septic-tank-installation',
+    canonical: 'https://homesepticpros.com/services/septic-tank-installation',
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: 'https://https://homesepticpros.com/septic-tank-installation',
+      url: 'https://https://homesepticpros.com/services/septic-tank-installation',
       site_name: 'Home Septic Pros',
     },
   }
@@ -35,7 +33,6 @@ export default function Installation() {
           maxVideoPreview: -1,
         }}
       />
-      <Header />
       <HeroBox
         heroText="Septic Tank Installation "
         subText="Septic Tank Installation Near You in Maryland"
@@ -337,8 +334,6 @@ export default function Installation() {
           </section>
         </div>
       </Main>
-
-      <Footer />
     </>
   )
 }

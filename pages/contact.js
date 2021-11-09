@@ -5,7 +5,6 @@ import HeroBox from '../components/HeroBox'
 export default function Contact() {
   return (
     <>
-      <Header />
       <HeroBox
         heroText="Contact us"
         subText="We Want to hear for you."

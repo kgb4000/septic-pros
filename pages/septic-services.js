@@ -7,11 +7,10 @@ import Footer from '../components/Footer'
 export default function Services() {
   return (
     <>
-      <Header />
       <HeroBox
         heroText="Septic System Services"
         subText="Septic System Installation and Repair"
-        backgroundHeight="60vh"
+        backgroundHeight="70vh"
         buttonText="Call 240 333-2345"
         backgroundImage="/images/plastic-septic-tanks.jpeg"
       />
@@ -96,7 +95,6 @@ export default function Services() {
           </div>
         </section>
       </Main>
-      <Footer />
     </>
   )
 }

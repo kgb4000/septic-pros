@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <DefaultSeo {...SEO} />
-      <Header />
       <HeroBox
         heroText="#1 Septic System Service Company in Anne Arundel County Maryland"
         subText="Let us take care of all your septic service needs"
@@ -26,17 +25,21 @@ export default function Home() {
           <section>
             <h1>Septic System Service Company</h1>
             <p>
-              Home Septic Pros is a septic system service, installation and
-              repair for the wonderful residents and businesses in Maryland. We
-              are a family owned septic tank installation company in
-              Millersville Maryland, but we serve customers all over the state.
+              <b>Home Septic Pros</b> is a septic system service, installation
+              and repair for the wonderful residents and businesses in Maryland.
+              We are a family owned septic tank installation company in
+              Millersville Maryland, but we serve customers in Anne Arundel
+              County and other nearby counties.
             </p>
-            <p>No job is too big or too small.</p>
+            <p>No job is too big or too small for Home Septic Pros.</p>
             <p>
               We have a dedicated team of employees that get the job right the
-              first time.We believe that a happy customer is a satisfied
-              customer, and we always try to go above and beyond to help our
-              customers when they need us the most.
+              first time. We believe that a happy customer is a satisfied
+              customer, and we always go above and beyond to help our customers
+              when they need us the most.
+            </p>
+            <p>
+              Whenever you need septic service, call us at (443)234 -2345 today.
             </p>
             <h2>24 Hour Emergency Septic Service</h2>
             <p>
@@ -107,8 +110,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="blog-section">
-          <div className="container">
+        <section>
+          <div className="smaller-container">
             <div className="title">
               <h2>Why Work With Home Septic Pros</h2>
               <p>Why Work With Us</p>
@@ -220,8 +223,11 @@ export default function Home() {
           </div>
         </div>
         <section>
-          <div className="container">
-            <h2>Customer Testimonials</h2>
+          <div className="smaller-container">
+            <div className="title">
+              <h2>Customer testimonials</h2>
+              <p>What Our Customers Say</p>
+            </div>
             <p>
               Home Septic Pros came out to for a new septic tank installation.
               They were knowledgeable, and professional, and made me feel
@@ -234,7 +240,6 @@ export default function Home() {
           </div>
         </section>
       </Main>
-      <Footer />
     </>
   )
 }
@@ -277,6 +282,8 @@ const Main = styled.main`
     }
 
     .why {
+      max-width: 1140px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
 

@@ -12,18 +12,17 @@ export default function SepticPercTest() {
     titleTemplate: 'Top Septic Perc Tests in Maryland | %s',
     description:
       'Buying land and new a Perc Test?. Or do you need to repair or replace your septic tank? Let us help.',
-    canonical: 'https://homesepticpros.com/septic-perc-test',
+    canonical: 'https://homesepticpros.com/services/septic-perc-test',
     openGraph: {
       type: 'website',
       locale: 'en_US',
-      url: 'https://homesepticpros.com/septic-perc-test',
+      url: 'https://homesepticpros.com/services/septic-perc-test',
       site_name: 'Home Septic Pros',
     },
   }
   return (
     <>
       <NextSeo {...SEO} />
-      <Header />
       <HeroBox
         heroText="Septic Perc Tests"
         subText="We Perform Percolation Tests Near You in Maryland"
@@ -256,7 +255,6 @@ export default function SepticPercTest() {
           </div>
         </section>
       </Main>
-      <Footer />
     </>
   )
 }

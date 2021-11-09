@@ -47,15 +47,17 @@ const Hero = styled.div`
   margin-top: -70px;
 
   .content {
-    max-width: 90%;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 0 1.2rem;
   }
 
   .heroText {
     font-size: 2.8rem;
+    margin-top: 0;
     margin-bottom: 1rem;
     text-align: left;
   }
@@ -96,7 +98,7 @@ const Hero = styled.div`
       }
     }
     .heroText {
-      font-size: 3rem;
+      font-size: 3.5rem;
     }
 
     .subText {

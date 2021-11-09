@@ -14,7 +14,7 @@ const Button = styled.button`
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1;
-  padding: 1rem 1.6rem;
+  padding: 1.4rem 1.6rem;
   text-align: center;
   text-decoration: none #0d172a solid;
   text-decoration-thickness: auto;

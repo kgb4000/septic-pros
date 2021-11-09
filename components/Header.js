@@ -25,7 +25,7 @@ export default function Header() {
             </li>
             <li>
               <Link href="/septic-services">
-                <a>Sevices</a>
+                <a>Services</a>
               </Link>
             </li>
             <li>
@@ -51,12 +51,13 @@ const Head = styled.header`
   line-height: 70px;
 
   max-width: 1140px;
-  padding: 0 2rem;
+  padding: 0 1.2rem;
   margin: 0 auto;
 
   .logo {
     font-weight: 700;
     letter-spacing: 1px;
+    font-size: 1.5rem;
 
     a {
       color: #fff;
@@ -65,12 +66,21 @@ const Head = styled.header`
     
   }
 
+  .menu-btn {
+      display: block;
+
+      a {
+        color: #fff;
+      }
+      
+    }
+
   nav {
     display: none;
   }
 
 
-  @media (min-width: 768px) {
+  @media (min-width: 872px) {
       height: 100px;
       line-height: 100px;
       
@@ -81,12 +91,11 @@ const Head = styled.header`
     }
 
     .menu-btn {
-      display: block;
+      display: none;
+    }
 
-      a {
-        color: #fff;
-      }
-      
+    nav {
+      display: block;
     }
 
 
