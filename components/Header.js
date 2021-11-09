@@ -47,25 +47,51 @@ export default function Header() {
 const Head = styled.header`
   display: flex;
   justify-content: space-between;
-  height: 50px;
-  line-height: 50px;
+  height: 70px;
+  line-height: 70px;
 
-  max-width: 1500px;
-  padding: 0 1.2rem;
+  max-width: 1140px;
+  padding: 0 2rem;
   margin: 0 auto;
 
   .logo {
     font-weight: 700;
     letter-spacing: 1px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
   }
 
   nav {
     display: none;
   }
 
-  ${
-    '' /* nav ul {
-    display: none;
+
+  @media (min-width: 768px) {
+      height: 100px;
+      line-height: 100px;
+      
+    .logo {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #fff;
+    }
+
+    .menu-btn {
+      display: block;
+
+      a {
+        color: #fff;
+      }
+      
+    }
+
+
+   nav ul {
+    display: flex;
     margin: 0;
 
     li {
@@ -75,24 +101,12 @@ const Head = styled.header`
       line-height: inherit;
       font-size: 1.2rem;
       color: #fff;
-    }
-  } */
-  }
-
-  @media (min-width: 768px) {
-    .logo {
-      font-size: 2rem;
-      font-weight: 900;
-    }
-
-    nav ul {
-      display: flex;
-      margin: 0;
-
-      li {
-        list-style-type: none;
-        margin-left: 1rem;
+    a {
+        color: #fff;
+        text-decoration: none;
       }
+    }
+  } 
     }
   }
 `

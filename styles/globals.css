@@ -8,8 +8,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Basier circle', -apple-system, system-ui, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .main-container {
@@ -19,8 +20,11 @@ body {
   margin: 0 auto;
 }
 
-.container {
-  max-width: 1200px;
+.container,
+.footer-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 img {
@@ -42,7 +46,7 @@ ol {
 
 .btn {
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
 
 h1 {
@@ -84,16 +88,54 @@ li {
   line-height: 1.4;
 }
 
+.title {
+  text-align: left;
+}
+
+.title h2 {
+  margin-bottom: 1rem;
+}
+
+.title p {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+
+.mobile-form {
+  display: block;
+  max-width: 400px;
+}
+
 section {
   margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  border: none;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+}
+
+textarea {
+  height: 100px;
+}
+
+@media (min-width: 900px) {
+  .mobile-form {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
-  .container {
-    margin-right: 4rem;
-  }
   h1,
-  h2 {
+  h2,
+  h3 {
     margin: 3rem 0;
   }
   h1 {
@@ -105,17 +147,18 @@ section {
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   p,
   li {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
     line-height: 1.6;
   }
 
   section {
-    margin: 4rem 0;
+    margin: 2rem 0;
+    padding: 2rem 0;
   }
 }

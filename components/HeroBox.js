@@ -9,6 +9,7 @@ export default function HeroBox({
   buttonText,
   backgroundHeight,
   buttonLink,
+  serviceForm,
 }) {
   return (
     <>
@@ -17,13 +18,16 @@ export default function HeroBox({
         backgroundHeight={backgroundHeight}
       >
         <div className="content">
-          <h1 className="heroText">{heroText}</h1>
-          <p className="subText">{subText}</p>
-          {buttonText && (
-            <a href={buttonLink}>
-              <Button>{buttonText}</Button>
-            </a>
-          )}
+          <div className="hero-info">
+            <h1 className="heroText">{heroText}</h1>
+            <p className="subText">{subText}</p>
+            {buttonText && (
+              <a href={buttonLink}>
+                <Button>{buttonText}</Button>
+              </a>
+            )}
+          </div>
+          {serviceForm && <div>{serviceForm}</div>}
         </div>
       </Hero>
     </>
@@ -34,51 +38,99 @@ const Hero = styled.div`
   color: #ffffff;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.42),
-      rgba(162, 155, 254, 0.65)
-    ),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(${(props) => props.backgroundImage});
   background-position: center;
   height: ${(props) => props.backgroundHeight};
   background-size: cover;
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: -70px;
 
   .content {
-    max-width: 1000px;
-    padding: 0 1.2rem;
+    max-width: 90%;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .heroText {
     font-size: 2.8rem;
     margin-bottom: 1rem;
+    text-align: left;
   }
 
   .subText {
     font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .service-form {
+    display: none;
+    max-width: 400px;
+    background: red;
+    padding: 1rem 2rem 2rem 2rem;
+
+    h3 {
+      margin: 1rem 0;
+    }
+
+    button {
+      background-color: red;
+      width: 100%;
+      height: 50px;
+      border: none;
+      color: #fff;
+    }
   }
 
   @media (min-width: 768px) {
+    margin-top: -100px;
+    .content {
+      text-align: center;
+
+      .heroText,
+      .subText {
+        text-align: center;
+      }
+    }
     .heroText {
       font-size: 3rem;
     }
 
     .subText {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (min-width: 1240px) {
+    .content {
+      max-width: 90%;
+      text-align: left;
+      .hero-info {
+        max-width: 600px;
+        margin-right: 2rem;
+      }
+      .heroText,
+      .subText {
+        text-align: left;
+      }
+    }
+
+    .service-form {
+      display: block;
+      max-width: 400px;
+      background: #01254c;
+      padding: 1rem 2rem 2rem 2rem;
+      margin-left: 2rem;
+
+      h3 {
+        margin: 1rem 0;
+      }
     }
   }
 
   @media (min-width: 1440px) {
-    .heroText {
-      font-size: 5rem;
-    }
-
-    .subText {
-      font-size: 2rem;
-    }
   }
 `

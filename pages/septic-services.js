@@ -2,14 +2,15 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import Header from '../components/Header'
 import HeroBox from '../components/HeroBox'
+import Footer from '../components/Footer'
 
 export default function Services() {
   return (
     <>
       <Header />
       <HeroBox
-        heroText="Septic Services"
-        subText="Septic Tank Installation"
+        heroText="Septic System Services"
+        subText="Septic System Installation and Repair"
         backgroundHeight="60vh"
         buttonText="Call 240 333-2345"
         backgroundImage="/images/plastic-septic-tanks.jpeg"
@@ -22,9 +23,10 @@ export default function Services() {
               These are the septic system services we offer to our customers.
               Feel free to call us with any special requests.
             </p>
+            <h2>Emergency Service</h2>
             <p>
-              Call us 24/7. We are always ready and able to do the job, even for
-              emergencies.
+              Call us 24/7 for any emergency service. We are always ready and
+              able to do the job to protect you, and our environment.
             </p>
             <div className="septic-services">
               <div className="service">
@@ -66,11 +68,11 @@ export default function Services() {
                 <h3>Drain Field Repair</h3>
                 <p>Learn more</p>
               </div>
-              <div className="service">
+              {/* <div className="service">
                 <img src="images/septic-truck-pumping-wastewater.jpeg" />
                 <h3>Well Installation</h3>
                 <p>Learn more</p>
-              </div>
+              </div> */}
               <div className="service">
                 <img src="images/septic-truck-pumping-wastewater.jpeg" />
                 <h3>Distribution Box Replacement</h3>
@@ -94,6 +96,7 @@ export default function Services() {
           </div>
         </section>
       </Main>
+      <Footer />
     </>
   )
 }
