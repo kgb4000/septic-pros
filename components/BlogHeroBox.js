@@ -1,14 +1,12 @@
 import styled from 'styled-components'
-import Button from '../components/Button'
 
-export default function HeroBox({
+export default function BlogHeroBox({
   backgroundImage,
-  heroText,
-  subText,
-  buttonText,
   backgroundHeight,
-  buttonLink,
-  serviceForm,
+  heroText,
+  image,
+  name,
+  date,
 }) {
   return (
     <>
@@ -19,14 +17,22 @@ export default function HeroBox({
         <div className="content">
           <div className="hero-info">
             <h1 className="heroText">{heroText}</h1>
-            <p className="subText">{subText}</p>
-            {buttonText && (
-              <a href={buttonLink}>
-                <Button>{buttonText}</Button>
-              </a>
+            {name && (
+              <div className="author-info">
+                <img className="avatar" src={image} />
+                <span>{name}</span>
+                <span>
+                  <em>
+                    {new Date(date).toLocaleDateString('en-us', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric',
+                    })}
+                  </em>
+                </span>
+              </div>
             )}
           </div>
-          {serviceForm && <div>{serviceForm}</div>}
         </div>
       </Hero>
     </>
@@ -43,7 +49,7 @@ const Hero = styled.div`
   height: ${(props) => props.backgroundHeight};
   background-size: cover;
   margin: 0 auto;
-  margin-top: -100px;
+  margin-top: -70px;
 
   .content {
     max-width: 1500px;
@@ -59,37 +65,34 @@ const Hero = styled.div`
     margin-top: 0;
     margin-bottom: 1rem;
     text-align: left;
-    line-height: 1.2;
   }
 
-  .subText {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    text-align: left;
-  }
+  .author-info {
+    display: flex;
+    align-items: center;
 
-  .service-form {
-    display: none;
-    max-width: 400px;
-    background: red;
-    padding: 1rem 2rem 2rem 2rem;
-
-    h3 {
-      margin: 1rem 0;
+    span {
+      margin-left: 1rem;
     }
 
-    button {
-      background-color: red;
-      width: 100%;
-      height: 50px;
-      border: none;
-      color: #fff;
+    .avatar {
+      max-width: 50px;
+      display: inline-block;
+      border: 2px solid #e67e22;
+      border-radius: 50%;
     }
   }
 
   @media (min-width: 768px) {
     margin-top: -100px;
+    .content {
+      text-align: center;
 
+      .heroText,
+      .subText {
+        text-align: center;
+      }
+    }
     .heroText {
       font-size: 3.5rem;
     }
@@ -110,18 +113,6 @@ const Hero = styled.div`
       .heroText,
       .subText {
         text-align: left;
-      }
-    }
-
-    .service-form {
-      display: block;
-      max-width: 400px;
-      background: #01254c;
-      padding: 1rem 2rem 2rem 2rem;
-      margin-left: 2rem;
-
-      h3 {
-        margin: 1rem 0;
       }
     }
   }

@@ -17,7 +17,9 @@ const Footer = () => {
               <nav>
                 <ul>
                   <li>
-                    <a>Home</a>
+                    <Link href="/">
+                      <a>Home</a>
+                    </Link>
                   </li>
                   <li>
                     <Link href="/septic-services">
@@ -25,7 +27,9 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a>Resources</a>
+                    <Link href="/blog">
+                      <a>Resources</a>
+                    </Link>
                   </li>
                   <li>
                     <a>About</a>

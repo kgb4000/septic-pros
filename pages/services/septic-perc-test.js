@@ -24,9 +24,9 @@ export default function SepticPercTest() {
     <>
       <NextSeo {...SEO} />
       <HeroBox
-        heroText="Septic Perc Tests"
-        subText="We Perform Percolation Tests Near You in Maryland"
-        backgroundHeight="70vh"
+        heroText="#1 Septic Perc Test Company in Anne Arundel County"
+        subText="We Perform Percolation Tests for you Septic System Installation and Repair."
+        backgroundHeight="100vh"
         buttonText="Call (443) 235-3972"
         backgroundImage="/images/plastic-septic-tanks.jpeg"
       />

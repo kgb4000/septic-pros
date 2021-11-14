@@ -21,7 +21,9 @@ export default function Header() {
         <nav>
           <ul>
             <li>
-              <a>Home</a>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
             </li>
             <li>
               <Link href="/septic-services">
@@ -29,7 +31,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <a>Resources</a>
+              <Link href="/blog">
+                <a>Resources</a>
+              </Link>
             </li>
             <li>
               <a>About</a>
@@ -47,10 +51,10 @@ export default function Header() {
 const Head = styled.header`
   display: flex;
   justify-content: space-between;
-  height: 70px;
-  line-height: 70px;
+  height: 100px;
+  line-height: 100px;
 
-  max-width: 1140px;
+  max-width: 1500px;
   padding: 0 1.2rem;
   margin: 0 auto;
 
@@ -67,13 +71,13 @@ const Head = styled.header`
   }
 
   .menu-btn {
-      display: block;
+    display: block;
 
-      a {
-        color: #fff;
-      }
-      
+    a {
+      color: #fff;
     }
+    
+  }
 
   nav {
     display: none;

@@ -171,7 +171,7 @@ const EstimateForm = styled.div`
     color: #fff;
     display: block;
     max-width: 100%;
-    background: #01254c;
+    background: #2c3e50;
     padding: 1rem 2rem 2rem 2rem;
 
     h3 {
@@ -184,6 +184,9 @@ const EstimateForm = styled.div`
       height: 50px;
       border: none;
       color: #fff;
+      font-size: inherit;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
   }
 `

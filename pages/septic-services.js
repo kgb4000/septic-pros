@@ -38,6 +38,15 @@ export default function Services() {
                 </Link>
               </div>
               <div className="service">
+                <Link href="/services/septic-tank-pumping">
+                  <a>
+                    <img src="images/septic-truck-pumping-wastewater.jpeg" />
+                    <h3>Septic Tank Pumping</h3>
+                    <p>Learn more</p>
+                  </a>
+                </Link>
+              </div>
+              <div className="service">
                 <img src="images/septic-truck-pumping-wastewater.jpeg" />
                 <h3>Septic Tank Inspection</h3>
                 <p>Learn more</p>
@@ -58,6 +67,15 @@ export default function Services() {
                 <p>Learn more</p>
               </div>
               <div className="service">
+                <Link href="/services/septic-perc-test">
+                  <a>
+                    <img src="images/septic-truck-pumping-wastewater.jpeg" />
+                    <h3>Septic Perc Test</h3>
+                    <p>Learn more</p>
+                  </a>
+                </Link>
+              </div>
+              {/* <div className="service">
                 <img src="images/drain-field-installation.jpeg" />
                 <h3>Drain Field Installation</h3>
                 <p>Learn more</p>
@@ -67,30 +85,17 @@ export default function Services() {
                 <h3>Drain Field Repair</h3>
                 <p>Learn more</p>
               </div>
-              {/* <div className="service">
-                <img src="images/septic-truck-pumping-wastewater.jpeg" />
-                <h3>Well Installation</h3>
-                <p>Learn more</p>
-              </div> */}
               <div className="service">
                 <img src="images/septic-truck-pumping-wastewater.jpeg" />
                 <h3>Distribution Box Replacement</h3>
                 <p>Learn more</p>
               </div>
-              <div className="service">
-                <Link href="/services/septic-perc-test">
-                  <a>
-                    <img src="images/septic-truck-pumping-wastewater.jpeg" />
-                    <h3>Septic Perc Test</h3>
-                    <p>Learn more</p>
-                  </a>
-                </Link>
-              </div>
+
               <div className="service">
                 <img src="images/septic-truck-pumping-wastewater.jpeg" />
                 <h3>Aerobic Treatment Unit Installation</h3>
                 <p>Learn more</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -102,23 +107,19 @@ export default function Services() {
 const Main = styled.main`
   .service {
     border: 1px solid #ddd;
-    border-radius: 20px;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     text-align: center;
     max-width: 100%;
     box-shadow: 0 0 50px #ccc;
 
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     h3 {
       margin: 1.5rem 1rem;
-    }
-
-    img {
-      border-top-right-radius: 20px;
-      border-top-left-radius: 20px;
-    }
-
-    p {
     }
   }
 
@@ -130,7 +131,7 @@ const Main = styled.main`
 
       .service {
         max-width: 20rem;
-        margin: 1rem;
+        margin: 0.5rem;
       }
     }
   }

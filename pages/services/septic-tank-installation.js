@@ -43,7 +43,7 @@ export default function Installation() {
       <Main>
         <div className="container">
           <section>
-            <h2>Septic Tank System Installation</h2>
+            <h2>Septic Tank Installation</h2>
             <p>
               Home Septic Pros are professionals at installing septic tanks and
               septic systems.
